@@ -1,0 +1,47 @@
+{
+  "customers": [
+    {
+      "id": "30000000",
+      "dni": "30000552",
+      "name": "USER444",
+      "age": 41,
+      "isDeleteAllow": false
+    },
+    {
+      "id": "99000000",
+      "dni": "99000000",
+      "name": "el empanaditas de fish",
+      "age": 40
+    },
+    {
+      "id": "63000000",
+      "dni": "63000000",
+      "name": "El bb majadero",
+      "age": 40
+    },
+    {
+      "id": "cz_VTE6",
+      "dni": "60000000",
+      "name": "TEST USERS",
+      "age": 9,
+      "isDeleteAllow": false
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
