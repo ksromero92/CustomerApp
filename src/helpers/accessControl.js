@@ -7,7 +7,6 @@ export const accessControl = permissionsRequired => WrappepComponent => {
     const SecuredControl = class extends Component {
                
         render() {
-            console.log(this.props);
             const { permissions } = this.props.user;
 
             const isAllow = permissionsRequired.every(p => permissions.indexOf(p) >= 0);
