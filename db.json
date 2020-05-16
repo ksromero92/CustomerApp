@@ -2,9 +2,9 @@
   "customers": [
     {
       "id": "0",
-      "dni": "30000001",
-      "name": "SOY UN TAZONVVVVVVVVV",
-      "age": 0,
+      "dni": "0000000001",
+      "name": "ADMON",
+      "age": 20,
       "user": {
         "permissions": [
           "CUSTOMER_LIST",
@@ -15,10 +15,23 @@
       "isDeleteAllow": false
     },
     {
-      "id": "1",
-      "dni": "000",
+      "id": "NQ5uPCP",
+      "dni": "111111111",
+      "name": "MONITA",
+      "age": 15,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
+    },
+    {
+      "id": "2cq9j8M",
+      "dni": "30000002",
       "name": "OTRO USUARIO",
-      "age": 0,
+      "age": 7,
       "user": {
         "permissions": [
           "CUSTOMER_LIST",
@@ -28,23 +41,10 @@
       }
     },
     {
-      "id": "2",
-      "dni": "33000001",
-      "name": "USERS",
-      "age": 2,
-      "user": {
-        "permissions": [
-          "CUSTOMER_LIST",
-          "CUSTOMER_VIEW",
-          "CUSTOMER_EDIT"
-        ]
-      }
-    },
-    {
-      "id": "3",
+      "id": "zXJe_Pe",
       "dni": "33000001",
       "name": "USER",
-      "age": 1,
+      "age": 0,
       "user": {
         "permissions": [
           "CUSTOMER_LIST",
@@ -54,9 +54,9 @@
       }
     },
     {
-      "id": "4",
-      "dni": "1",
-      "name": "AA",
+      "id": "8rV6Wc-",
+      "dni": "330000012",
+      "name": "USER2",
       "age": 0,
       "user": {
         "permissions": [
@@ -64,13 +64,25 @@
           "CUSTOMER_VIEW",
           "CUSTOMER_EDIT"
         ]
-      },
-      "isDeleteAllow": false
+      }
     },
     {
-      "id": "5",
-      "dni": "33000001",
-      "name": "B",
+      "id": "rp34fcy",
+      "dni": "3300000133",
+      "name": "USER3",
+      "age": 0,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
+    },
+    {
+      "id": "MIVvBJA",
+      "dni": "3000000244",
+      "name": "USER4",
       "age": 0,
       "user": {
         "permissions": [

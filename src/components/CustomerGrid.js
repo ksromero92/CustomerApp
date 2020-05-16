@@ -20,23 +20,24 @@ import { Link } from 'react-router-dom';
 const useStyles1 = makeStyles((theme) => ({
   root: {
     flexShrink: 0,
+    color: theme.palette.text.secondary,
     marginLeft: theme.spacing(2.5),
   },
 }));
 const StyledTableCell = withStyles((theme) => ({
   head: {
-      backgroundColor: theme.palette.common.black,
-      color: theme.palette.common.white,
+    backgroundColor: theme.palette.common.black,
+    color: theme.palette.common.white,
   },
   body: {
-      fontSize: 14,
+    fontSize: 14,
   },
 }))(TableCell);
 const StyledTableRow = withStyles((theme) => ({
   root: {
-      '&:nth-of-type(odd)': {
-          backgroundColor: theme.palette.action.hover,
-      },
+    '&:nth-of-type(odd)': {
+      backgroundColor: theme.palette.action.hover,
+    },
   },
 }))(TableRow);
 
@@ -102,6 +103,12 @@ const useStyles2 = makeStyles({
   table: {
     minWidth: 500,
   },
+  container: {
+    maxHeight: 500,
+  },
+  spacer: {
+    flex: '1 1 50%',
+  }
 });
 
 export default function CustomerGrid({ rows, urlPath }) {
@@ -121,58 +128,62 @@ export default function CustomerGrid({ rows, urlPath }) {
   };
 
   return (
-    <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="custom pagination table">
-        <TableHead>
-          <TableRow>
-            <TableCell align="center">Nombre</TableCell>
-            <TableCell align="center">Editar</TableCell>
-            <TableCell align="center">Eliminar</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {(rowsPerPage > 0
-            ? rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-            : rows
-          ).map((row) => (
-            <StyledTableRow key={row.name}>
-              <StyledTableCell component="th" scope="row">
-                <Link to={`${urlPath}${row.dni}`}>{row.name}</Link>
-              </StyledTableCell>
-              <StyledTableCell style={{ width: 160 }} align="right">
-                <Link to={`${urlPath}${row.dni}/edit`}>{'Editar'}</Link>
-              </StyledTableCell>
-              <StyledTableCell style={{ width: 160 }} align="right">
-                <Link to={`${urlPath}${row.dni}/del`}>{'Eliiminar'}</Link>
-              </StyledTableCell>
-            </StyledTableRow>
-          ))}
-
-          {emptyRows > 0 && (
-            <TableRow style={{ height: 53 * emptyRows }}>
-              <TableCell colSpan={6} />
+    <Paper className={classes.root}>
+      <TableContainer className={classes.container}>
+        <Table aria-label="custom pagination table">
+          <TableHead>
+            <TableRow>
+              <TableCell align="center">Nombre</TableCell>
+              <TableCell align="center">Editar</TableCell>
+              <TableCell align="center">Eliminar</TableCell>
             </TableRow>
-          )}
-        </TableBody>
-        <TableFooter>
-          <TableRow>
-            <TablePagination
-              rowsPerPageOptions={[5, 10, 25, { label: 'All', value: -1 }]}
-              colSpan={3}
-              count={rows.length}
-              rowsPerPage={rowsPerPage}
-              page={page}
-              SelectProps={{
-                inputProps: { 'aria-label': 'rows per page' },
-                native: true,
-              }}
-              onChangePage={handleChangePage}
-              onChangeRowsPerPage={handleChangeRowsPerPage}
-              ActionsComponent={TablePaginationActions}
-            />
-          </TableRow>
-        </TableFooter>
-      </Table>
-    </TableContainer>
+          </TableHead>
+          <TableBody>
+            {(rowsPerPage > 0
+              ? rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+              : rows
+            ).map((row) => (
+              <StyledTableRow key={row.name}>
+                <StyledTableCell component="th" scope="row">
+                  <Link to={`${urlPath}${row.dni}`} style={{ textDecoration: 'none' }}>{row.name}</Link>
+                </StyledTableCell>
+                <StyledTableCell style={{ width: 160 }} align="right">
+                  <Link to={`${urlPath}${row.dni}/edit`} style={{ textDecoration: 'none' }}>{'Editar'}</Link>
+                </StyledTableCell>
+                <StyledTableCell style={{ width: 160 }} align="right">
+                  <Link to={`${urlPath}${row.dni}/del`} style={{ textDecoration: 'none' }}>{'Eliiminar'}</Link>
+                </StyledTableCell>
+              </StyledTableRow>
+            ))}
+
+            {emptyRows > 0 && (
+              <TableRow style={{ height: 53 * emptyRows }}>
+                <TableCell colSpan={6} />
+              </TableRow>
+            )}
+          </TableBody>
+        </Table>
+      </TableContainer>
+      <TableFooter>
+        <TableRow >
+          <TablePagination style={{position: 'sticky', left: '90%', }}
+            className={classes.spacer}
+            rowsPerPageOptions={[5, 10, 25, { label: 'All', value: -1 }]}
+            colSpan={3}
+            count={rows.length}
+            rowsPerPage={rowsPerPage}
+            page={page}
+            SelectProps={{
+              inputProps: { 'aria-label': 'rows per page' },
+              native: true,
+            }}
+            onChangePage={handleChangePage}
+            onChangeRowsPerPage={handleChangeRowsPerPage}
+            ActionsComponent={TablePaginationActions}
+          />
+        </TableRow>
+      </TableFooter>
+
+    </Paper>
   );
 }
