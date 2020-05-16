@@ -1,18 +1,160 @@
 {
   "customers": [
     {
-      "id": "ae72645",
+      "id": "xaXduLd",
       "dni": "30000001",
-      "name": "OTRO USUARIO",
-      "age": 3,
+      "name": "SOY UN TAZON",
+      "age": 0,
       "user": {
         "permissions": [
           "CUSTOMER_LIST",
           "CUSTOMER_VIEW",
           "CUSTOMER_EDIT"
         ]
-      },
-      "isDeleteAllow": false
+      }
+    },
+    {
+      "id": "slg_OsV",
+      "dni": "000",
+      "name": "OTRO USUARIO",
+      "age": 0,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
+    },
+    {
+      "id": "9tNBGLO",
+      "dni": "33000001",
+      "name": "OTRO USUARIO",
+      "age": 2,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
+    },
+    {
+      "id": "07PV1Mm",
+      "dni": "33000001",
+      "name": "USERS",
+      "age": 2,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
+    },
+    {
+      "id": "AKO0frI",
+      "dni": "9",
+      "name": "OTRO USUARIO",
+      "age": 4,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
+    },
+    {
+      "id": "Vmqz5hr",
+      "dni": "33000001",
+      "name": "USER",
+      "age": 1,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
+    },
+    {
+      "id": "iu4GJ3B",
+      "dni": "1",
+      "name": "A",
+      "age": 0,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
+    },
+    {
+      "id": "fGbZFM2",
+      "dni": "33000001",
+      "name": "B",
+      "age": 0,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
+    },
+    {
+      "id": "favvosq",
+      "dni": "5667765",
+      "name": "F",
+      "age": 0,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
+    },
+    {
+      "id": "dEJHu0P",
+      "dni": "345432",
+      "name": "DFGFDS",
+      "age": 0,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
+    },
+    {
+      "id": "zuueK0T",
+      "dni": "345498",
+      "name": "DFVGBHH",
+      "age": 0,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
+    },
+    {
+      "id": "wASb2pq",
+      "dni": "9876",
+      "name": "ERFVGYHB",
+      "age": 0,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
     },
     {
       "id": "xaXduLd",
@@ -41,9 +183,48 @@
       }
     },
     {
-      "id": "eoW11Yu",
-      "dni": "9333",
-      "name": "JUAN PEREZZZZ",
+      "id": "9tNBGLO",
+      "dni": "33000001",
+      "name": "OTRO USUARIO",
+      "age": 2,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
+    },
+    {
+      "id": "07PV1Mm",
+      "dni": "33000001",
+      "name": "USERS",
+      "age": 2,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
+    },
+    {
+      "id": "AKO0frI",
+      "dni": "9",
+      "name": "OTRO USUARIO",
+      "age": 4,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
+    },
+    {
+      "id": "Vmqz5hr",
+      "dni": "33000001",
+      "name": "USER",
       "age": 1,
       "user": {
         "permissions": [
@@ -51,14 +232,78 @@
           "CUSTOMER_VIEW",
           "CUSTOMER_EDIT"
         ]
-      },
-      "isDeleteAllow": false
+      }
     },
     {
-      "id": "9tNBGLO",
+      "id": "iu4GJ3B",
+      "dni": "1",
+      "name": "A",
+      "age": 0,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
+    },
+    {
+      "id": "fGbZFM2",
       "dni": "33000001",
-      "name": "OTRO USUARIO",
-      "age": 2,
+      "name": "B",
+      "age": 0,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
+    },
+    {
+      "id": "favvosq",
+      "dni": "5667765",
+      "name": "F",
+      "age": 0,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
+    },
+    {
+      "id": "dEJHu0P",
+      "dni": "345432",
+      "name": "DFGFDS",
+      "age": 0,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
+    },
+    {
+      "id": "zuueK0T",
+      "dni": "345498",
+      "name": "DFVGBHH",
+      "age": 0,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
+    },
+    {
+      "id": "wASb2pq",
+      "dni": "9876",
+      "name": "ERFVGYHB",
+      "age": 0,
       "user": {
         "permissions": [
           "CUSTOMER_LIST",

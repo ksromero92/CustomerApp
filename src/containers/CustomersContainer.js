@@ -35,6 +35,7 @@ class CustomersContainer extends Component {
             </CustomersActions>
         </div>
     )
+    
     render() {
         return (
             <div>

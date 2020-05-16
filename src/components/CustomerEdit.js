@@ -56,13 +56,7 @@ class CustomerEdit extends Component {
     renderField = ({ input, meta, type, label, name, withFocus }) => {
         const classes = useStyles();
         return (
-            <div className={classes.root}>
-
-                {/* <TextField id="standard-basic" label="Standard" />
-                <TextField id="filled-basic" label="Filled" variant="filled" />
-                <TextField id="outlined-basic" label="Outlined" variant="outlined" /> */}
-
-                
+            <div className={classes.root}>                
                 <TextField {...input}
                     type={!type ? "text" : type}
                     label = {label}
