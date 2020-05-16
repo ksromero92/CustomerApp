@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CustomersListItem from './CustomerListItem';
+//import CustomersListItem from './CustomerListItem';
+import CustomerGrid from './CustomerGrid';
 import { CUSTOMER_LIST } from '../constants/permissions';
 import { accessControl } from './../helpers/accessControl';
 
@@ -8,15 +9,7 @@ const CustomersList = ({ customers, urlPath }) => {
     return (
         <div className="customers-list">
             {
-                customers.map(c =>
-                    <CustomersListItem
-                        key={c.dni}
-                        dni={c.dni}
-                        name={c.name}
-                        editAction={'Editar'}
-                        delAction={'Eliiminar'}
-                        urlPath={urlPath}>
-                    </CustomersListItem>)
+                <CustomerGrid rows={customers} urlPath={urlPath}/>                
             }
         </div>
     );
