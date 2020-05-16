@@ -19,6 +19,10 @@ class CustomersContainer extends Component {
         this.props.history.push('/customers/new');
     }
 
+    handleHome = () => {
+        this.props.history.goBack();
+    }
+
     renderBody = customers => (
         <div>
             <CustomersList 
@@ -27,6 +31,7 @@ class CustomersContainer extends Component {
             </CustomersList>
             <CustomersActions>
                 <button onClick={this.handleAddNew}>Nuevo cliente</button>
+                <button onClick={this.handleHome}>Home</button>
             </CustomersActions>
         </div>
     )

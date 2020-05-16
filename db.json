@@ -1,30 +1,71 @@
 {
   "customers": [
     {
-      "id": "30000000",
-      "dni": "30000552",
-      "name": "USER444",
-      "age": 41,
+      "id": "ae72645",
+      "dni": "30000001",
+      "name": "OTRO USUARIO",
+      "age": 3,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      },
       "isDeleteAllow": false
     },
     {
-      "id": "99000000",
-      "dni": "99000000",
-      "name": "el empanaditas de fish",
-      "age": 40
+      "id": "xaXduLd",
+      "dni": "30000001",
+      "name": "SOY UN TAZON",
+      "age": 0,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
     },
     {
-      "id": "63000000",
-      "dni": "63000000",
-      "name": "El bb majadero",
-      "age": 40
+      "id": "slg_OsV",
+      "dni": "000",
+      "name": "OTRO USUARIO",
+      "age": 0,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
     },
     {
-      "id": "cz_VTE6",
-      "dni": "60000000",
-      "name": "TEST USERS",
-      "age": 9,
+      "id": "eoW11Yu",
+      "dni": "9333",
+      "name": "JUAN PEREZZZZ",
+      "age": 1,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      },
       "isDeleteAllow": false
+    },
+    {
+      "id": "9tNBGLO",
+      "dni": "33000001",
+      "name": "OTRO USUARIO",
+      "age": 2,
+      "user": {
+        "permissions": [
+          "CUSTOMER_LIST",
+          "CUSTOMER_VIEW",
+          "CUSTOMER_EDIT"
+        ]
+      }
     }
   ],
   "posts": [

@@ -6,6 +6,18 @@ import CustomersActions from './CustomerActions';
 import { Prompt } from 'react-router-dom';
 import { CUSTOMER_EDIT } from '../constants/permissions';
 import { accessControl } from './../helpers/accessControl';
+import { makeStyles } from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
+
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        '& > *': {
+            margin: theme.spacing(1),
+            width: '25ch',
+        },
+    },
+}));
 
 const isNumber = value => (
     isNaN(Number(value)) && "El campo debe ser un número"
@@ -27,11 +39,10 @@ const validate = values => {
 };
 
 
-
 const toNumber = value => value && Number(value);
 const toUpper = value => value && value.toUpperCase();
 const toLower = value => value && value.toLowerCase();
-const onlyGrow = (value, previousValue, values) => 
+const onlyGrow = (value, previousValue, values) =>
     value && (!previousValue ? value : (value > previousValue ? value : previousValue));
 
 class CustomerEdit extends Component {
@@ -40,20 +51,29 @@ class CustomerEdit extends Component {
         if (this.txt) {
             this.txt.focus();
         }
-
     }
 
-    renderField = ({input, meta, type, label, name, withFocus}) => (
-        <div>
-            <label htmlFor={name}>{label}</label>
-            <input {...input} 
+    renderField = ({ input, meta, type, label, name, withFocus }) => {
+        const classes = useStyles();
+        return (
+            <div className={classes.root}>
+
+                {/* <TextField id="standard-basic" label="Standard" />
+                <TextField id="filled-basic" label="Filled" variant="filled" />
+                <TextField id="outlined-basic" label="Outlined" variant="outlined" /> */}
+
+                
+                <TextField {...input}
                     type={!type ? "text" : type}
-                    ref={withFocus && (txt => { this.txt = txt;} ) } />
-            {
-                meta.touched && meta.error && <span>{meta.error}</span>
-            }
-        </div>
-    );    
+                    label = {label}
+                    variant="outlined" 
+                    ref={withFocus && (txt => { this.txt = txt; })} />
+                {
+                    meta.touched && meta.error && <span>{meta.error}</span>
+                }
+            </div>
+        )
+    };
 
     render() {
         const { handleSubmit, submitting, onBack, pristine, submitSucceeded } = this.props;
@@ -61,19 +81,19 @@ class CustomerEdit extends Component {
             <div>
                 <h2>Edición del cliente</h2>
                 <form onSubmit={handleSubmit}>
-                    <Field 
+                    <Field
                         withFocus
-                        name="name" 
-                        component={this.renderField} 
+                        name="name"
+                        component={this.renderField}
                         label="Nombre"
                         parse={toUpper}
                         format={toLower} ></Field>
-                    <Field 
-                        name="dni" 
-                        component={this.renderField} 
+                    <Field
+                        name="dni"
+                        component={this.renderField}
                         label="Dni"></Field>
-                    <Field name="age" 
-                        component={this.renderField} 
+                    <Field name="age"
+                        component={this.renderField}
                         type="number"
                         validate={isNumber}
                         label="Edad"
@@ -92,7 +112,7 @@ class CustomerEdit extends Component {
                         message="Se perderán los datos si continúa"></Prompt>
                 </form>
             </div>
-        );        
+        );
     }
 };
 
@@ -104,7 +124,7 @@ CustomerEdit.propTypes = {
 };
 
 const CustomerEditForm = reduxForm(
-    { 
+    {
         form: 'CustomerEdit',
         validate
     })(CustomerEdit);

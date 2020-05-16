@@ -29,7 +29,7 @@ class NewCustomerContainer extends Component {
         const newCustomer = {
             "id": "",
             "dni": "",
-            "name": "-",
+            "name": "",
             "age": 0
           };
         return <CustomerEdit {...newCustomer} onSubmit={this.handleSubmit}
